@@ -64,26 +64,26 @@ class CoordinateSpaceTests: XCTestCase {
     }
 
     func testSwapImagesShowsHidesViewsCorrectly() {
-//        guard let imageView = viewController.imageView,
-//            let secondImageView = viewController.secondImageView else {
-//            return XCTFail("Outlets for imageView and secondImageView should be set on ViewController")
-//        }
-//
-//        viewController.viewWillAppear(true)
-//        viewController.swapImages(UIButton())
-//
-//        let predicate = NSPredicate { _,_ in
-//            secondImageView.isHidden == false
-//        }
-//        expectation(for: predicate, evaluatedWith: self, handler: nil)
-//
-//        XCTAssertTrue(imageView.isHidden,
-//                      "Swapping images should hide first imageView")
-//
-//        waitForExpectations(timeout: 2) { _ in
-//            XCTAssertFalse(secondImageView.isHidden,
-//                           "Swapping images should unhide secondImageView")
-//        }
+        guard let imageView = viewController.imageView,
+            let secondImageView = viewController.secondImageView else {
+            return XCTFail("Outlets for imageView and secondImageView should be set on ViewController")
+        }
+
+        viewController.viewWillAppear(true)
+        viewController.swapImages(UIButton())
+
+        let predicate = NSPredicate { _,_ in
+            secondImageView.isHidden == false
+        }
+        expectation(for: predicate, evaluatedWith: self, handler: nil)
+
+        XCTAssertTrue(imageView.isHidden,
+                      "Swapping images should hide first imageView")
+
+        waitForExpectations(timeout: 2) { _ in
+            XCTAssertFalse(secondImageView.isHidden,
+                           "Swapping images should unhide secondImageView")
+        }
     }
 }
 

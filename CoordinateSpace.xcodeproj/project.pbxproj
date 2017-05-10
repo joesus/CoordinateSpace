@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27A4F46E1EC366DC00A2D476 /* UIViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A4F46D1EC366DC00A2D476 /* UIViewExtensionsTests.swift */; };
 		27BE86061EC25B7900442791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BE86051EC25B7900442791 /* AppDelegate.swift */; };
 		27BE86081EC25B7900442791 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BE86071EC25B7900442791 /* ViewController.swift */; };
 		27BE860B1EC25B7900442791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27BE86091EC25B7900442791 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27A4F46D1EC366DC00A2D476 /* UIViewExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtensionsTests.swift; path = ../CoordinateSpace/UIViewExtensionsTests.swift; sourceTree = "<group>"; };
 		27BE86021EC25B7900442791 /* CoordinateSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinateSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BE86051EC25B7900442791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27BE86071EC25B7900442791 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		27BE86191EC25B7900442791 /* CoordinateSpaceTests */ = {
 			isa = PBXGroup;
 			children = (
+				27A4F46D1EC366DC00A2D476 /* UIViewExtensionsTests.swift */,
 				27BE861A1EC25B7900442791 /* CoordinateSpaceTests.swift */,
 				27BE861C1EC25B7900442791 /* Info.plist */,
 			);
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A4F46E1EC366DC00A2D476 /* UIViewExtensionsTests.swift in Sources */,
 				27BE861B1EC25B7900442791 /* CoordinateSpaceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +418,7 @@
 				27BE86211EC25B7900442791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27BE86221EC25B7900442791 /* Build configuration list for PBXNativeTarget "CoordinateSpaceTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +427,7 @@
 				27BE86241EC25B7900442791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

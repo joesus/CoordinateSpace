@@ -12,15 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var secondImageView: UIImageView!
 
-
     @IBAction func swapImages(_ sender: Any) {
-
-        guard let imageViewCopy = imageView.snapshotView(afterScreenUpdates: true),
-            let imageViewSuperview = imageView.superview else {
+        guard let imageViewCopy = imageView.snapshotView(afterScreenUpdates: true) else {
                 fatalError("Oh no!")
         }
 
-//        imageViewCopy.frame = imageViewSuperview.convert(imageView.frame, to: view)
+        imageViewCopy.frame = imageView.positionIn(view: view)
 
         view.addSubview(imageViewCopy)
         imageView.isHidden = true
@@ -32,5 +29,14 @@ class ViewController: UIViewController {
             self?.secondImageView.isHidden = false
             imageViewCopy.removeFromSuperview()
         }
+    }
+}
+
+extension UIView {
+    func positionIn(view: UIView) -> CGRect {
+        if let superview = superview {
+            return superview.convert(frame, to: view)
+        }
+        return frame
     }
 }
